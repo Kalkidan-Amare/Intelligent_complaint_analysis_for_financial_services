@@ -24,6 +24,7 @@ class Settings:
 
     # Full vector store (Task 3/4): point this to the provided Chroma directory
     full_chroma_dir: Path = Path(os.getenv("FULL_CHROMA_DIR", VECTOR_STORE_DIR / "full_chroma"))
+    full_chroma_collection: str = os.getenv("CHROMA_COLLECTION", "complaints_full")
 
     embedding_model: str = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 

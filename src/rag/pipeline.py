@@ -25,7 +25,7 @@ class RAGPipeline:
         self,
         *,
         chroma_dir: Path | None = None,
-        collection_name: str = "complaints_full",
+        collection_name: str = settings.full_chroma_collection,
         embedding_model: str = settings.embedding_model,
         llm_model: str = settings.llm_model,
         llm_max_new_tokens: int = settings.llm_max_new_tokens,
