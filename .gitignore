@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data artifacts (keep folder structure)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Vector stores (often large)
+vector_store/*
+!vector_store/.gitkeep
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*.log
